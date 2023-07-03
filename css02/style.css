@@ -1,0 +1,291 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open sans', sans-serif;
+}
+
+html, body{
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+.center{
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+header{
+	padding: 25px 2% 25px 2%;
+	background-color: #b2d6fe;
+}
+
+.logo-1{
+	float: left;
+	width: 170px;
+	height: 60px;
+	background-image: url('../imagens02/kaic-logo.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.logo-2{
+	float: right;
+	width: 170px;
+	height: 60px;
+	background-image: url('../imagens02/kaic-logo.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+section .cover-form{
+	width: 100%;
+}
+
+.bg{
+	position: relative;
+	height: 600px;
+	background-image: url('../imagens02/bg-form.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.form-container{
+	position: absolute;
+	right: 30px;
+	top: -2.5%;
+	width: 400px;
+	height: 105%;
+	background-color: white;
+	box-shadow: 2px 2px 5px 0px rgba(110, 110, 110, 0.5);
+}
+
+.form-container h2{
+	font-weight: normal;
+	font-size: 20px;
+	padding: 22px 15px;
+	font-style: italic;
+	background-color: #d9d9d9;
+}
+
+.form-container form{
+	margin-top: 20px;
+	padding: 15px;
+}
+
+.form-container form p{
+	font-size: 18px;
+	color: #525252;
+}
+
+.form-wraper:not(:first-child){
+	margin-top: 40px;
+}
+
+.form-wraper:last-child{
+	margin-top: 20px;
+}
+
+.form-container input[type=text]{
+	width: 100%;
+	height: 50px;
+	border: 1px solid #ccc;
+	line-height: 45px;
+	padding-left: 10px;
+	border-radius: 2px;
+}
+
+.form-container input[type=submit]{
+	width: 100%;
+	height: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	color: white;
+	background-color: #033c50;
+	cursor: pointer;
+	border-radius: 2px;
+	border: 0;
+}
+
+section .chamada{
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+
+section.chamada div.center{
+	padding: 100px 0 100px 0;
+	background-color: #033c50;
+}
+
+section.chamada h2{
+	width: 98%;
+	display: inline-block;
+	font-weight: normal;
+	font-size: 23px;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+section.chamada p{
+	width: 98%;
+	display: inline-block;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+}
+
+.flex-mosaico{
+	display: flex;
+}
+
+.item-1-mosaico{
+	margin-top: 5px;
+	width: 60%;
+	background-size: cover;
+	background-position: center;
+}
+
+.item-2-mosaico{
+	margin-top: 5px;
+	width: 40%;
+	padding: 40px 40px;
+	background-color: #0075fc;
+}
+
+.item-2-mosaico p{
+	font-size: 20px;
+	color: white;
+	text-align: justify;
+}
+
+.item-2-mosaico h2{
+	font-size: 28px;
+	color: white;
+}
+
+footer{
+	width: 100%;
+	padding: 25px 2% 25px 2%;
+	background-color: #b2d6fe;
+}
+
+footer p{
+	margin-top: 15px;
+	float: right;
+}
+
+footer img{
+	float: left;
+	width: 200px;
+	height: 40px;
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 1280px){
+	.icone-seta{
+		bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 1024px){
+
+	.bg{
+		height: auto;
+		padding: 80px 0;
+		text-align: center;
+	}
+
+	.form-container{
+		text-align: left;
+		height: auto;
+		width: 96%;
+		max-width: 400px;
+		position: static;
+		display: inline-block;
+	}
+
+	.icone-seta{
+		bottom: -220px;
+	}
+}
+
+@media screen and (max-width: 768px){
+
+	.flex-mosaico{
+		display: block;
+	}
+
+	.item-1-mosaico{
+		padding-top:80%;
+		width: 100%;
+	}
+
+	.item-2-mosaico{
+		text-align: justify;
+		width: 100%;
+	}
+
+	.item-2-mosaico h2{
+		font-size: 21px;
+	}
+
+	.item-2-mosaico p{
+		font-size: 15px;
+	}
+
+	.form-container h2{
+		font-size: 18px;
+	}
+
+	.form-wraper p{
+		font-size: 15px;
+	}
+
+	.icone-seta{
+		bottom: -320px;
+	}
+
+	section.chamada h2{
+		font-size: 21px;
+	}
+
+	section.chamada p{
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 510px){
+
+	header{
+		text-align: center;
+	}
+
+	[class^="logo"]{
+		margin-top:10px;
+		display: inline-block;
+		float: none;
+	}
+
+	footer img{
+		display: none;
+	}
+
+	footer .center{
+		text-align: center;
+	}
+
+	footer p{
+		float: none;
+		font-size: 15px;
+	}
+
+}
